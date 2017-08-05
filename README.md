@@ -1,7 +1,7 @@
 
-Small utility for adding tasks to todoist after pressing Win+t.
+Small utility for adding tasks to todoist after pressing $mod+t.
 
-In I3 add to your config:
+Add to your i3 config:
 
     bindsym $mod+t exec /home/jiri/storage/todoist/t
 

@@ -8,6 +8,7 @@ if len(sys.argv) < 2:
   sys.exit()
 
 msg = ' '.join(sys.argv[1:])
-print(msg)
-api = TodoistAPI('244edfbafbfddf12067bdbd866805d928ade76c1')
-print(api.quick.add(msg))
+msg = msg.strip()
+if msg:
+    api = TodoistAPI('244edfbafbfddf12067bdbd866805d928ade76c1')
+    print(api.quick.add(msg))
